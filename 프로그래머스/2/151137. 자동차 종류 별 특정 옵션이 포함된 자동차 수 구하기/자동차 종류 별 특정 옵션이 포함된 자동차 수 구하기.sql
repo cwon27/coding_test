@@ -6,11 +6,11 @@ FROM
     CAR_RENTAL_COMPANY_CAR
 WHERE
     -- 통풍
-    OPTIONS LIKE CONCAT('%', '통풍시트', '%')
+    OPTIONS LIKE '%통풍시트%'
     -- 열선
-    OR OPTIONS LIKE CONCAT('%', '열선시트', '%')
+    OR OPTIONS LIKE '%열선시트%'
     -- 가죽
-    OR OPTIONS LIKE CONCAT('%', '가죽시트', '%')
+    OR OPTIONS LIKE '%가죽시트%'
 GROUP BY
     CAR_TYPE
 ORDER BY
